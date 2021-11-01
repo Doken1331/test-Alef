@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+    <!-- Header styles start -->
+    <header class="header" id="header">
+        <div class="wrapper">
+            <div class="header__up">
+                <nav class="header__nav">
+                    <div class="header__logo">
+                        <a href="#!">
+                            <img src="./img/header-logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__list-item"><a href="#header" class="header__list-link">Main</a></li>
+                            <li class="header__list-item"><a href="#header" class="header__list-link">Gallery</a></li>
+                            <li class="header__list-item"><a href="#header" class="header__list-link">News</a></li>
+                            <li class="header__list-item"><a href="#header" class="header__list-link">Profile</a></li>
+                        </ul>
+                    </div>
+                    <button class="header__toggler">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </button>
+                </nav>
+                <div class="header__call">
+                    <a href="tel:+544349000000" class="header__call-link">+544 3490 00000</a>
+                    <h2 class="header__call-title">Звони скорее!</h2>
+                </div>
+            </div>
+            <div class="header_mobile">
+                <h2 class="header__title">Найдено 349 котов</h2>
+                <!-- max-width 940px start -->
+                <div class="header__call_mobile">
+                    <a href="tel:+544349000000" class="header__call-link">+544 3490 00000</a>
+                    <h2 class="header__call-title">Звони скорее!</h2>
+                </div>
+                <!-- max-width 940px end -->
+            </div>
+        </div>
+    </header>
+    <!-- Header styles end -->
+
+    <!-- main styles start -->
+    <main class="main">
+        <div class="wrapper">
+            <!-- sorting styles start -->
+
+            <div class="main__sorting">
+                <h2 class="main__sorting-title">Сортировать по:</h2>
+                <ul class="main__sorting-list">
+                    <li class="main__sorting-list-item">Цене
+                        <ul class="main__sorting-list_sub">
+                            <li class="list_sub-item" id="sort-down-price">По убыванию</li>
+                            <li class="list_sub-item" id="sort-up-price">По возрастанию</li>
+                        </ul>
+                    </li>
+                    <li class="main__sorting-list-item">Возрасту
+                        <ul class="main__sorting-list_sub">
+                            <li class="list_sub-item" id="sort-down-year">По убыванию</li>
+                            <li class="list_sub-item" id="sort-up-year">По возрастанию</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- sorting styles end -->
+
+            <!-- card styles start -->
+
+            <section class="main__cell">
+                <div class="main__cards" id="sort">
+                    <div class="main__card" data-price="30000" data-year="11">
+                        <div class="main__card_sale">-40%</div>
+                        <div class="main__card_like">
+                            <i class="icon-like"></i>
+                        </div>
+                        <img src="./img/cat-1.jpg" alt="cat-1" class="main__card-pic">
+                        <h2 class="main__card-title">
+                            Кот полосатый
+                        </h2>
+                        <ul class="main__card-list">
+                            <li class="main__card-list-item">
+                                Коричневый окрас
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>11 мес.</span><br>Возраст
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>4</span><br>Кол-во лап
+                            </li>
+                        </ul>
+                        <p class="main__card-desc">30000 руб.</p>
+                        <button class="main__card-buy">Купить</button>
+                    </div>
+                    <div class="main__card" data-price="40000" data-year="2">
+                        <div class="main__card_like">
+                            <i class="icon-like"></i>
+                        </div>
+                        <img src="./img/cat-2.jpg" alt="cat-2" class="main__card-pic">
+                        <h2 class="main__card-title">
+                            Кот полосатый
+                        </h2>
+                        <ul class="main__card-list">
+                            <li class="main__card-list-item">
+                                Коричневый окрас
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>2 мес.</span><br>Возраст
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>4</span><br>Кол-во лап
+                            </li>
+                        </ul>
+                        <p class="main__card-desc">40000 руб.</p>
+                        <button class="main__card-sell">Продан</button>
+                    </div>
+                    <div class="main__card" data-price="20000" data-year="1">
+                        <div class="main__card_like">
+                            <i class="icon-like"></i>
+                        </div>
+                        <img src="./img/cat-3.jpg" alt="cat-3" class="main__card-pic">
+                        <h2 class="main__card-title">
+                            Кот полосатый
+                        </h2>
+                        <ul class="main__card-list">
+                            <li class="main__card-list-item">
+                                Коричневый окрас
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>1 мес.</span><br>Возраст
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>4</span><br>Кол-во лап
+                            </li>
+                        </ul>
+                        <p class="main__card-desc">20000 руб.</p>
+                        <button class="main__card-buy">Купить</button>
+                    </div>
+                    <div class="main__card" data-price="25000" data-year="5">
+                        <div class="main__card_like">
+                            <i class="icon-like"></i>
+                        </div>
+                        <img src="./img/cat-1.jpg" alt="cat-1" class="main__card-pic">
+                        <h2 class="main__card-title">
+                            Кот полосатый
+                        </h2>
+                        <ul class="main__card-list">
+                            <li class="main__card-list-item">
+                                Коричневый окрас
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>5 мес.</span><br>Возраст
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>4</span><br>Кол-во лап
+                            </li>
+                        </ul>
+                        <p class="main__card-desc">25000 руб.</p>
+                        <button class="main__card-buy">Купить</button>
+                    </div>
+                    <div class="main__card" data-price="30000" data-year="6">
+                        <div class="main__card_like">
+                            <i class="icon-like"></i>
+                        </div>
+                        <div class="main__card_sale">-40%</div>
+                        <img src="./img/cat-3.jpg" alt="cat-3" class="main__card-pic">
+                        <h2 class="main__card-title">
+                            Кот полосатый
+                        </h2>
+                        <ul class="main__card-list">
+                            <li class="main__card-list-item">
+                                Коричневый окрас
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>6 мес.</span><br>Возраст
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>4</span><br>Кол-во лап
+                            </li>
+                        </ul>
+                        <p class="main__card-desc">30000 руб.</p>
+                        <button class="main__card-buy">Купить</button>
+                    </div>
+                    <div class="main__card" data-price="10000" data-year="2">
+                        <div class="main__card_like">
+                            <i class="icon-like"></i>
+                        </div>
+                        <img src="./img/cat-2.jpg" alt="cat-2" class="main__card-pic">
+                        <h2 class="main__card-title">
+                            Кот полосатый
+                        </h2>
+                        <ul class="main__card-list">
+                            <li class="main__card-list-item">
+                                Коричневый окрас
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>2 мес.</span><br>Возраст
+                            </li>
+                            <li class="main__card-list-item">
+                                <span>4</span><br>Кол-во лап
+                            </li>
+                        </ul>
+                        <p class="main__card-desc">10000 руб.</p>
+                        <button class="main__card-sell">Продан</button>
+                    </div>
+                </div>
+
+                <button class="main__btn">
+                    Показать еще 20   
+                </button>
+
+            </section>
+
+            <!-- card styles end -->
+
+
+
+        </div>
+        <div class="push">
+            Питомец добавлен в избранное!
+        </div>
+        <div class="un_push">
+            Питомец удален из избранного!
+        </div>
+    </main>
+    <!-- main styles end -->
+
+
+    <!-- footer styles start -->
+
+    <div class="wrapper">
+        <a href="#header" class="up">
+            <img src="./img/arrow-up.svg" alt="up" class="up-pic">
+        </a>
+        <footer class="footer">
+            <div class="action">
+                <div class="action__left">
+                    <h2 class="action__title">
+                        Успей купить!
+                    </h2>
+                    <p class="action__desc">
+                        Подпишись и успей<br>словить все акции!
+                    </p>
+                </div>
+                <div class="action__right">
+                    <form id="form_id" method="post" action="" onsubmit="javascript:return validate('form_id','email');" class="action__form">
+                        <input type="text" id="email" name="email" class="action__form-input" placeholder="Email">
+                        <input type="submit" class="action__form-btn" value="Подписаться"></input>
+                        <input type="checkbox" id="action" class="action__form-checkbox">
+                        <label for="action" class="action__form-label">
+                            Подписаться на новости
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- footer styles end -->
+
+
+    <script src="./js/scripts.min.js"></script>
+
+</body>
+
+</html>
